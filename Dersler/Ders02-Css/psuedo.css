@@ -53,3 +53,13 @@ p::first-letter {
   color: white;
   background-color: red;
 }
+
+.text::after {
+  color: blue;
+  content: "ben yazi olarak eklendim";
+}
+
+.text::before {
+  color: red;
+  content: "yazıyla başladı";
+}

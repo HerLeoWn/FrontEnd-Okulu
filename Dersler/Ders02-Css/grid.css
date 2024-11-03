@@ -1,0 +1,17 @@
+.container {
+  height: 600px;
+  background: indigo;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-rows: repeat(3, 100px);
+  /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.item {
+  background: purple;
+  padding: 20px;
+  border: 1px solid salmon;
+}
