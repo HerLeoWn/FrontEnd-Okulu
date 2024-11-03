@@ -1,0 +1,55 @@
+.linkClass {
+  color: orange;
+}
+
+.linkClass:active {
+  color: indigo;
+}
+
+.linkClass:visited {
+  color: purple;
+}
+
+.linkClass:hover {
+  color: powderblue;
+}
+
+.list_item {
+  color: green;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+/* .list_item:first-child {
+  color: blue;
+}
+
+.list_item:last-child {
+  color: red;
+} */
+
+/* .list_item:nth-child(even) {
+  background-color: lightgray;
+}
+
+.list_item:nth-child(even) {
+    background-color: lightgray;
+  } */
+
+.list_item:nth-child(-n + 6) {
+  background-color: lightgray;
+}
+
+/* Psuedo element */
+
+.list_item::first-letter {
+  font-size: 24px;
+  color: white;
+  background-color: blue;
+}
+
+p::first-letter {
+  font-size: 60px;
+  color: white;
+  background-color: red;
+}
