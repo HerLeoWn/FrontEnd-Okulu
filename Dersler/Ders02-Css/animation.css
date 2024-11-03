@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: darkgray;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out; */
+  /* transition: all .5s ease-in-out; */
+  animation: kutucuk 2s ease-in-out infinite;
+}
+
+.box:hover {
+  background-color: chartreuse;
+  width: 50px;
+  height: 200px;
+}
+
+@keyframes kutucuk {
+  0%, 100%{
+    transform: translateX(0);
+    background-color: red;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translateX(100px);
+    background-color: yellow;
+    border-radius: 30%;
+  }
+}
