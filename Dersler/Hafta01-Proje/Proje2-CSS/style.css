@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #04ddb2;
+  --second-color: #333;
+  --white-color: #fff;
+  --gray-color: #767676;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--white-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  color: var(--second-color);
+}
+
+.navBar {
+  width: 60%;
+  padding: 0px 16em;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    font-size: 1em;
+    li > a {
+      color: var(--gray-color);
+      text-decoration: none;
+    }
+
+    li:nth-child(3) > a {
+      color: var(--second-color);
+    }
+  }
+}
+
+.headerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.headerBtn {
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.topSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+
+  h1 {
+    font-size: 3em;
+    color: var(--second-color);
+
+    span {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+  }
+
+  p {
+    text-align: center;
+    width: 60%;
+    font-size: 1.2em;
+    color: var(--gray-color);
+  }
+}
+
+.midSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  width: 40%;
+  background-color: gainsboro;
+  border-radius: 50px;
+  margin: 50px 0px;
+
+  video {
+    border-radius: 50px;
+  }
+}
+
+.footerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 3.2em;
+    text-align: center;
+    width: 70%;
+    color: var(--second-color);
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 70vw;
+  height: 100%;
+  margin: 50px 0px;
+
+  .sameDiv {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: var(--second-color-color);
+    text-align: left;
+    li {
+      list-style-type: none;
+      a {
+        color: var(--gray-color);
+        text-decoration: none;
+        line-height: 2.5em;
+      }
+    }
+  }
+
+  .allButtons {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 100%;
+
+    .btnClass {
+      color: var(--white-color);
+      border: none;
+      padding: 5px;
+      border-radius: 2rem;
+      background-color: var(--primary-color);
+      font-size: 0.9em;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .infoDiv {
+    width: 20%;
+    height: 100%;
+  }
+}
